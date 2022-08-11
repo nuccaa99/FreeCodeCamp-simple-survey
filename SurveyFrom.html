@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATS!!! Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Take a Quiz about Cats!</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to test your cat knowledge!!
+        </p>
+    </header>
+
+    <body>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required />
+            </div>
+
+
+            <div class="form-group">
+                <label id="number-label" for="age">Age <span class="additional_info"> (optional) </span> </label>
+                <input type="number" name="age" id="number" min="5" max="100" class="form-control"
+                    placeholder="Enter your age" />
+            </div>
+
+
+            <div class="input-radio">
+                <p> Which cat coloration is almost all female? </p>
+                <div>
+                    <input type="radio" id="Pointed" name="female-breed" value="Pointed" checked>
+                    <label for="Pointed">Pointed</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Tortoiseshell" name="female-breed" value="Tortoiseshell">
+                    <label for="Tortoiseshell">Tortoiseshell</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="White" name="female-breed" value="White">
+                    <label for="White"> White</label>
+                </div>
+            </div>
+
+
+            <div class="input-radio2">
+                <p> True or False: Most adult cats only meow at people, not at other cats. </p>
+                <div>
+                    <input type="radio" id="true" name="meow" value="true" checked>
+                    <label for="true"> True</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="false" name="meow" value="false">
+                    <label for="false"> False</label>
+                </div>
+            </div>
+
+            <div class="check-box">
+                <p> A cat’s whiskers… </p>
+                <div>
+                    <input type="checkbox" id="first" name="whiskers" value="fit" checked>
+                    <label for="first">Help them determine if they can fit through an opening</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="second" name="whiskers" value="vibrat">
+                    <label for="second">Can detect air flow and tiny vibrations on the ground.</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="third" name="whiskers" value="legs">
+                    <label for="third">Are on the backs of their legs as well as their face.</label>
+                </div>
+
+                <div class="form-group">
+                    <p> What is your favorite feature about cats? </p>
+                    <select id="dropdown" name="feature" class="form-control" required>
+                        <option disabled selected value>Select_feature</option>
+                        <option value="ears">Ears</option>
+                        <option value="whiskers">Whiskers</option>
+                        <option value="paws">Paws</option>
+                        <option value="nose">Nose</option>
+                        <option value="belly">Belly</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments about cats?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+        </form>
+</div>
+</body>
+
+</html>
